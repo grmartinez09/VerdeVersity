@@ -18,7 +18,6 @@
     /Comms strings
     <string name="comms" translatable="false"> Chat </string>
 
-
     /log in strings
     <string name="login_button_text" translatable="false"> Register </string>
     <string name="password_hint" translatable="false"> ******* </string>
@@ -41,5 +40,17 @@
     <string name="add_fav" translatable="false"> Add to favorites </string>
     <string name="comment_button" translatable="false"> Comment on Post </string>
     <string name="share_button" translatable="false"> Share post </string>
+    <string name="bg_image" translatable="false"> Background Image </string>
+
+    //profile strings
+    <string name="cert_message" translatable="false"> how to effectively track and communicate environmental and social initiatives</string>
+    <string name="cert_title" translatable="false"> Best Practices in Sustainability Reporting </string>
+    <string name="view_cert" translatable="false">View Certificate</string>
+    <string name="course_des" translatable="false">Exploring the fundamental principles of a circular economic model</string>
+    <string name="cert_list" translatable="false">Certificates</string>
+    <string name="course_list" translatable="false">Courses Offered</string>
+    <string name="user_info" translatable="false">University of X\nComputer Science</string>
+    <string name="user_name" translatable="false">Cassandra Joe</string>
+
 
 </resources>
