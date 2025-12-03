@@ -7,4 +7,25 @@
 
     /user profile strings
 
+    /log in strings
+    <string name="login_button_text" translatable="false"> Register </string>
+    <string name="password_hint" translatable="false"> ******* </string>
+    <string name="email_hint" translatable="false"> example@email.com </string>
+    <string name="email_label" translatable="false"> Email </string>
+    <string name="password_label" translatable="false"> Password </string>
+    <string name="logo_description" translatable="false"> Logo Image </string>
+
+    /item event card strings
+    <string name="enroll_button" translatable="false"> Enroll </string>
+    <string name="event_date" translatable="false"> Saturday, October 18, 2025 </string>
+    <string name="event_location" translatable="false"> Baguio City </string>
+    <string name="event_time" translatable="false"> 9:00 AM - 12:00 PM </string>
+    <string name="event_title" translatable="false"> Zero-Waste Kitchen: Composting and Food Preservation Basics </string>
+    <string name="add_fav" translatable="false"> Add to favorites </string>
+    <string name="view_more" translatable="false"> View more </string>
+"
+
+
+
+
 </resources>

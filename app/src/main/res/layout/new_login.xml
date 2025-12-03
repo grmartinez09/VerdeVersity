@@ -24,8 +24,8 @@
             android:id="@+id/logoImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/verdeversity_logo"
-            android:scaleType="center"
+            android:src="@drawable/vv_logojpg"
+            android:scaleType="centerCrop"
             android:contentDescription="@string/logo_description" />
 
     </androidx.cardview.widget.CardView>
@@ -45,7 +45,7 @@
 
     <!-- Email Input -->
     <EditText
-        android:id="@+id/editTextEmailAddress"
+        android:id="@+id/userEmail"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -76,11 +76,11 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
 
     <!-- Password Input -->
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/userPassword"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -114,6 +114,6 @@
         app:cornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
