@@ -1,7 +1,19 @@
 <resources>
     <string name="app_name">VerdeVersity</string>
 
-    /homepage strings
+    /events booking string
+    <string name="book_button" translatable="false"> Book Now </string>
+    <string name="event_info" translatable="false"> Saturday, October 18, 2025\n9:00 AM - 12:00 PM\nBaguio City </string>
+    <string name="event_des" translatable="false"> This hands-on workshop provides practical skills to significantly reduce food waste at home. Participants will learn the fundamentals of home composting methods suitable for small spaces and basic food preservation techniques like pickling and drying to extend the life of their produce. </string>
+    <string name="event_price" translatable="false"> PHP 85.00 </string>
+
+
+    /home strings
+    <string name="events_button" translatable="false"> Events </string>
+    <string name="timeline_button" translatable="false"> Timeline </string>
+    <string name="zwb_username" translatable="false"> Zero Waste Baguio, Inc. </string>
+    <string name="comment1" translatable="false">See you again next month! </string>
+    <string name="post1" translatable="false"> Feeling so inspired and productive after the DIY Eco-Cleaners Workshop this morning! ✨ It was amazing to learn how to make powerful, non-toxic cleaners using simple things like vinegar, baking soda, and leftover citrus peels from our kitchen here in Baguio.</string>
 
     /Comms strings
 
@@ -21,9 +33,14 @@
     <string name="event_location" translatable="false"> Baguio City </string>
     <string name="event_time" translatable="false"> 9:00 AM - 12:00 PM </string>
     <string name="event_title" translatable="false"> Zero-Waste Kitchen: Composting and Food Preservation Basics </string>
-    <string name="add_fav" translatable="false"> Add to favorites </string>
     <string name="view_more" translatable="false"> View more </string>
-"
+
+    /image description
+    <string name="filter_button" translatable="false"> Filter </string>
+    <string name="user_profile" translatable="false"> User Profile </string>
+    <string name="add_fav" translatable="false"> Add to favorites </string>
+    <string name="comment_button" translatable="false"> Comment on Post </string>
+    <string name="share_button" translatable="false"> Share post </string>
 
 
 

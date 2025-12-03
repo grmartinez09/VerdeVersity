@@ -13,60 +13,64 @@
         tools:context=".TimelineActivity">
 
         <!-- Search Bar -->
-        <EditText
-            android:id="@+id/search_workshop_edittext"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_edittext_background"
-            android:drawableStart="@drawable/ic_menu"
-            android:drawableEnd="@drawable/ic_search"
-            android:drawablePadding="12dp"
-            android:hint="Search Workshop"
-            android:inputType="text"
-            android:padding="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Buttons Layout -->
         <LinearLayout
             android:id="@+id/buttons_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="16dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/search_workshop_edittext">
+            app:layout_constraintTop_toTopOf="parent">
 
             <Button
                 android:id="@+id/events_button"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Events"
+                android:background="#A0D9C9"
+                android:backgroundTint="#A0D9C9"
+                android:text="@string/events_button"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black" />
 
             <Button
                 android:id="@+id/timeline_button"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:backgroundTint="#A0D9C9"
                 android:text="Timeline"
                 android:textAllCaps="false"
-                android:textColor="@android:color/black" />
+                android:textColor="#606060" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/filter_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:src="@drawable/ic_filter"
-                android:contentDescription="Filter" />
+                android:contentDescription="@string/filter_button"
+                android:src="@drawable/ic_filter" />
         </LinearLayout>
+
+        <SearchView
+            android:layout_width="375dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Timeline Post Card -->
         <androidx.cardview.widget.CardView
@@ -78,7 +82,7 @@
             app:cardElevation="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/buttons_layout">
+            app:layout_constraintTop_toBottomOf="@+id/buttons_layout">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -97,8 +101,8 @@
                         android:id="@+id/profile_image_post"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/profile_jeff_dingo"
-                        android:scaleType="centerCrop"/> <!-- Use circular image view library for perfect circle -->
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pfp_jeff" /> <!-- Use circular image view library for perfect circle -->
 
                     <TextView
                         android:id="@+id/user_name_post"
@@ -118,8 +122,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:lineSpacingExtra="4dp"
-                    android:text="Feeling so inspired and productive after the DIY Eco-Cleaners Workshop this morning! ✨ It was amazing to learn how to make powerful, non-toxic cleaners using simple things like vinegar, baking soda, and leftover citrus peels from our kitchen here in Baguio."
-                    android:textColor="@android:color/darker_gray"
+                    android:text="@string/post1"
+                    android:textColor="#606060"
                     android:textSize="16sp" />
 
                 <!-- Action Buttons -->
@@ -132,19 +136,22 @@
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
+                        android:contentDescription="@string/add_fav"
                         android:src="@drawable/ic_heart_outline" />
 
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginStart="20dp"
-                        android:src="@drawable/ic_comment_bubble" />
+                        android:contentDescription="@string/comment_button"
+                        android:src="@drawable/comment_regular" />
 
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginStart="20dp"
-                        android:src="@drawable/ic_share" />
+                        android:contentDescription="@string/share_button"
+                        android:src="@drawable/share_from_square_regular" />
                 </LinearLayout>
 
                 <!-- Divider -->
@@ -166,8 +173,9 @@
                         android:id="@+id/profile_image_comment"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/profile_jameil_hoswo"
-                        android:scaleType="centerCrop"/> <!-- Use circular image view library for perfect circle -->
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pfp_jamiel"
+                        android:imageDescription="user_profile"/> <!-- Use circular image view library for perfect circle -->
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -187,8 +195,8 @@
                             android:id="@+id/comment_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="See you again next month!"
-                            android:textColor="@android:color/darker_gray" />
+                            android:text="@string/comment1"
+                            android:textColor="#606060" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
