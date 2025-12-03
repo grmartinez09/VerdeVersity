@@ -175,7 +175,7 @@
                         android:layout_height="40dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pfp_jamiel"
-                        android:imageDescription="user_profile"/> <!-- Use circular image view library for perfect circle -->
+                        android:contentDescription="user_profile"/> <!-- Use circular image view library for perfect circle -->
 
                     <LinearLayout
                         android:layout_width="wrap_content"

@@ -16,8 +16,8 @@
     <string name="post1" translatable="false"> Feeling so inspired and productive after the DIY Eco-Cleaners Workshop this morning! ✨ It was amazing to learn how to make powerful, non-toxic cleaners using simple things like vinegar, baking soda, and leftover citrus peels from our kitchen here in Baguio.</string>
 
     /Comms strings
+    <string name="comms" translatable="false"> Chat </string>
 
-    /user profile strings
 
     /log in strings
     <string name="login_button_text" translatable="false"> Register </string>
@@ -41,8 +41,5 @@
     <string name="add_fav" translatable="false"> Add to favorites </string>
     <string name="comment_button" translatable="false"> Comment on Post </string>
     <string name="share_button" translatable="false"> Share post </string>
-
-
-
 
 </resources>
